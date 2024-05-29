@@ -1,5 +1,10 @@
 
-
+var menuLinks = [
+  { text: 'about', href: '/about' },
+  { text: 'catalog', href: '/catalog' },
+  { text: 'orders', href: '/orders' },
+  { text: 'account', href: '/account' },
+];
 const mainEl = document.getElementById("main");
 mainEl.style.backgroundColor = "var(--main-bg)";
 const header = document.createElement("h1");
@@ -9,16 +14,20 @@ mainEl.classList.add("flex-ctr");
 
 const topMenuEl = document.getElementById("top-menu");
 topMenuEl.style.height = "100%";
-topMenuEl.style.backgroundColor = "var( --top-menu-bg)";
-topMenuEl.classList.add("flex_around");
-
-// console.log(topMenuEl);
+topMenuEl.style.backgroundColor = "var(--top-menu-bg)";
+topMenuEl.classList.add("flex-around");
 
 
-const menuLists = document.getElementsById("Link");
-var menuLinks = [
-topMenuEl { text: 'about', href: '/about '},
-topMenuEl { text: 'catalog', href: '/catalog'},
-topMenuEl { text: 'orders', href: '/orders' },
-topMenuEl { text: 'account', href: '/account' },
-];
+
+
+for (let i =0;i <menuLinks.length;i++){
+let link = document.createElement("a")
+link.setAttribute("href", menuLinks[i].href);
+link.textContent=menuLinks[i].text;
+topMenuEl.append(link)
+
+
+}
+
+
+

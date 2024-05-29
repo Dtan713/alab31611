@@ -39,6 +39,5 @@ nav a {
 }
 
 #top-menu a:hover {
-  background-color: var(--sub-menu-bg);
+  background-color: var(--top-menu-bg);
 }
-
