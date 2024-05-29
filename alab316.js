@@ -12,4 +12,13 @@ topMenuEl.style.height = "100%";
 topMenuEl.style.backgroundColor = "var( --top-menu-bg)";
 topMenuEl.classList.add("flex_around");
 
-console.log(topMenuEl);
+// console.log(topMenuEl);
+
+
+const menuLists = document.getElementsById("Link");
+var menuLinks = [
+topMenuEl { text: 'about', href: '/about '},
+topMenuEl { text: 'catalog', href: '/catalog'},
+topMenuEl { text: 'orders', href: '/orders' },
+topMenuEl { text: 'account', href: '/account' },
+];
