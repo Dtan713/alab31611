@@ -1,10 +1,9 @@
-
-// var menuLinks = [
-//   { text: 'about', href: '/about' },
-//   { text: 'catalog', href: '/catalog' },
-//   { text: 'orders', href: '/orders' },
-//   { text: 'account', href: '/account' },
-// ];
+//  var menuLinks = [
+//    { text: 'about', href: '/about' },
+//    { text: 'catalog', href: '/catalog' },
+//    { text: 'orders', href: '/orders' },
+//    { text: 'account', href: '/account' },
+//  ];
 var menuLinks = [
   {text: 'about', href: '/about'},
   {text: 'catalog', href: '#', subLinks: [
@@ -17,7 +16,7 @@ var menuLinks = [
     {text: 'pending', href: '/orders/pending'},
     {text: 'history', href: '/orders/history'},
   ]},
-  {text: 'account', href: '#', subLinks: [
+    {text: 'account', href: '#', subLinks: [
     {text: 'profile', href: '/account/profile'},
     {text: 'sign out', href: '/account/signout'},
   ]},
@@ -44,14 +43,15 @@ subMenuEl.style.backgroundColor = "var(--sub-menu-bg)";
 subMenuEl.classList.add("flex-around");
 
 
-
-
 for (let i =0;i <menuLinks.length;i++){
 let link = document.createElement("a")
 link.setAttribute("href", menuLinks[i].href);
 link.textContent=menuLinks[i].text;
 topMenuEl.append(link)
 
+// for (let i =0;i <topMenuEl.length;i++){
+// let topMenuEl = document.clickElement("a")
+// return }
 
 }
 
